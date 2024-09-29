@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024/10/12(土)NFT別荘ツアー</title>
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0ece3; /* すすき色の薄い色 */
+            color: #4a4a4a;
+        }
+        header {
+            background-color: #d4cdb8; /* すすき色 */
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        h1 {
+            color: #6b5b35; /* すすき色の濃い色 */
+            margin: 0;
+        }
+        nav {
+            background-color: #6b5b35; /* すすき色の濃い色 */
+            padding: 10px 0;
+            position: fixed;
+            top: 80px;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            padding-top: 140px; /* ヘッダーとナビゲーションの高さ分 */
+        }
+        section {
+            background-color: #ffffff;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .top-image-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .top-image-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 2px solid #d4cdb8;
+            border-radius: 10px;
+            z-index: 1;
+        }
+        .top-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .top-image-container:hover .top-image {
+            transform: scale(1.05);
+        }
+        h2 {
+            color: #6b5b35; /* すすき色の濃い色 */
+            border-bottom: 2px solid #d4cdb8;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #6b5b35; /* すすき色の濃い色 */
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            position: relative;
+            padding-left: 1.5em;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        li::before {
+            content: "・";
+            position: absolute;
+            left: 0.5em;
+            color: #6b5b35; /* すすき色の濃い色 */
+            font-weight: bold;
+        }
+        #schedule li {
+            display: flex;
+            align-items: baseline;
+            padding-left: 0;
+        }
+        #schedule li::before {
+            content: none;
+        }
+        #schedule li time {
+            flex: 0 0 4.5em;
+            font-weight: bold;
+            color: #6b5b35; /* すすき色の濃い色 */
+        }
+        #schedule li span {
+            flex: 1;
+        }
+        a {
+            color: #8c7851; /* すすき色の暗め */
+            text-decoration: none;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #6b5b35; /* すすき色の濃い色 */
+        }
+        .description {
+            text-align: center;
+            color: #6b5b35; /* すすき色の濃い色 */
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        .description a {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>10/12(土)NFT別荘ツアー</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">参加の流れ</a></li>
+            <li><a href="#sauna">サウナ</a></li>
+            <li><a href="#nft-villa">NFT別荘</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>NFT別荘とは</h2>
+            <div class="top-image-container">
+                <img src="./opensea.png" alt="NFT別荘イメージ" class="top-image">
+            </div>
+            <div class="description">
+                <p>2021年12月、<a href="https://opensea.io/ja/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/83043940665768770865699358894748269213829739639191854110552852666377413066753" target="_blank" rel="noopener noreferrer">箱根山奥の不動産が1ETHでNFTとして販売</a>されました。</p>
+                <p>2024年12月、この物件を手放すことにしました。</p>
+                <p>不動産×NFTの利用という観点の3年におよぶ実験から得られた体験を皆様に共有いたします。</p>
+                <p>10/12(土) NFT別荘ツアー、はじまります。</p>
+            </div>
+        </section>
+
+        <section id="schedule">
+            <h2>参加の流れ</h2>
+            <h3>定員</h3>
+            <p>XX名</p>
+            <h3>申込方法</h3>
+            <p>Lineグループで参加表明</p>
+            <h3>タイムスケジュール</h3>
+            <ul>
+                <li>08:30 東京周辺に集合</li>
+                <li>　→車で箱根方面に移動</li>
+                <li>10:00 箱根サウナ「山賊サウナ」到着</li>
+                <li>　→箱根の大自然を感じながらサ活</li>
+                <li>12:00 車で仙石原方面に移動しながら昼食スポットを探す</li>
+                <li>　→昼食・移動</li>
+                <li>14:00 NFT別荘「箱根仙石原ロッジ」到着</li>
+                <li>　→座学:NFT別荘の理想と現実</li>
+                <li>　→エアドロップ:物品配布</li>
+                <li>　→サ活：別荘付属のサウナ見学(男性浴室・女性浴室あり)</li>
+                <li>16:00 車で東京方面へ。</li>
+                <li>　→19:00ごろには東京周辺に到着見込み</li>
+            </ul>
+        </section>
+
+        <section id="sauna">
+            <h2>サウナ</h2>
+            <h3>1.山賊サウナ 10時ごろ</h3>
+            <p>箱根の名所。観光としての思い出に。</p>
+            <ul>
+                <li>2時間:2500円・デトックスウォーター飲み放題</li>
+                <li>別途有料でレンタルタオル・レンタル水着あり</li>
+                <li><a href="https://sanzokusauna.com/" target="_blank">開放的な自然の中で薪サウナを体験できます。</a></li>
+            </ul>
+
+            <h3>2.箱根仙石原ロッジ付属サウナ 15時ごろ</h3>
+            <p>別荘付属の無料サウナ。</p>
+            <ul>
+                <li>ヒーターや扉が壊れている</li>
+                <li>これが別荘サウナの末路</li>
+                <li>つらい</li>
+                <li>源泉かけ流しの温泉あり、そちらはいい感じ</li>
+            </ul>
+        </section>
+
+        <section id="nft-villa">
+            <h2>NFT別荘について</h2>
+            <p>コンテンツ作成中</p>
+            <ul>
+                <li>作成中</li>
+                <li>作成中</li>
+                <li>作成中</li>
+            </ul>
+            <p>コンテンツ作成中</p>
+        </section>
+    </div>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const navHeight = document.querySelector('nav').offsetHeight;
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
