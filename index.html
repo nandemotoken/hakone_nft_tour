@@ -9,11 +9,11 @@
             font-family: 'Noto Sans JP', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0ece3; /* すすき色の薄い色 */
+            background-color: #f0ece3;
             color: #4a4a4a;
         }
         header {
-            background-color: #d4cdb8; /* すすき色 */
+            background-color: #d4cdb8;
             padding: 20px;
             text-align: center;
             position: fixed;
@@ -21,16 +21,19 @@
             z-index: 1000;
         }
         h1 {
-            color: #6b5b35; /* すすき色の濃い色 */
+            color: #6b5b35;
             margin: 0;
+            font-size: 1.5em;
         }
         nav {
-            background-color: #6b5b35; /* すすき色の濃い色 */
+            background-color: #6b5b35;
             padding: 10px 0;
             position: fixed;
-            top: 80px;
+            top: 60px;
             width: 100%;
             z-index: 1000;
+            overflow-x: auto;
+            white-space: nowrap;
         }
         nav ul {
             list-style-type: none;
@@ -47,16 +50,17 @@
             text-decoration: none;
             font-weight: bold;
             cursor: pointer;
+            font-size: 0.9em;
         }
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            padding-top: 140px; /* ヘッダーとナビゲーションの高さ分 */
+            padding-top: 120px;
         }
         section {
             background-color: #ffffff;
-            padding: 40px;
+            padding: 20px;
             margin-bottom: 30px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -91,12 +95,14 @@
             transform: scale(1.05);
         }
         h2 {
-            color: #6b5b35; /* すすき色の濃い色 */
+            color: #6b5b35;
             border-bottom: 2px solid #d4cdb8;
             padding-bottom: 10px;
+            font-size: 1.3em;
         }
         h3 {
-            color: #6b5b35; /* すすき色の濃い色 */
+            color: #6b5b35;
+            font-size: 1.1em;
         }
         ul {
             list-style-type: none;
@@ -112,7 +118,7 @@
             content: "・";
             position: absolute;
             left: 0.5em;
-            color: #6b5b35; /* すすき色の濃い色 */
+            color: #6b5b35;
             font-weight: bold;
         }
         #schedule li {
@@ -126,29 +132,63 @@
         #schedule li time {
             flex: 0 0 4.5em;
             font-weight: bold;
-            color: #6b5b35; /* すすき色の濃い色 */
+            color: #6b5b35;
         }
         #schedule li span {
             flex: 1;
         }
         a {
-            color: #8c7851; /* すすき色の暗め */
+            color: #8c7851;
             text-decoration: none;
             transition: color 0.3s ease, text-decoration 0.3s ease;
             text-decoration: underline;
+            word-wrap: break-word;
         }
         a:hover {
-            color: #6b5b35; /* すすき色の濃い色 */
+            color: #6b5b35;
         }
         .description {
             text-align: center;
-            color: #6b5b35; /* すすき色の濃い色 */
-            font-size: 1.1em;
+            color: #6b5b35;
+            font-size: 1em;
             line-height: 1.6;
             margin-top: 20px;
         }
         .description a {
             font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.2em;
+            }
+            nav {
+                top: 45px;
+            }
+            nav ul li {
+                margin: 0 10px;
+            }
+            nav ul li a {
+                font-size: 0.8em;
+            }
+            .container {
+                padding-top: 100px;
+            }
+            section {
+                padding: 15px;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            h3 {
+                font-size: 1em;
+            }
+            .description {
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
@@ -186,18 +226,18 @@
             <p>Lineグループで参加表明</p>
             <h3>タイムスケジュール</h3>
             <ul>
-                <li>08:30 東京周辺に集合</li>
-                <li>　→車で箱根方面に移動</li>
-                <li>10:00 箱根サウナ「山賊サウナ」到着</li>
-                <li>　→箱根の大自然を感じながらサ活</li>
-                <li>12:00 車で仙石原方面に移動しながら昼食スポットを探す</li>
-                <li>　→昼食・移動</li>
-                <li>14:00 NFT別荘「箱根仙石原ロッジ」到着</li>
-                <li>　→座学:NFT別荘の理想と現実</li>
-                <li>　→エアドロップ:物品配布</li>
-                <li>　→サ活：別荘付属のサウナ見学(男性浴室・女性浴室あり)</li>
-                <li>16:00 車で東京方面へ。</li>
-                <li>　→19:00ごろには東京周辺に到着見込み</li>
+                <li><time>08:30</time> <span>東京周辺に集合</span></li>
+                <li><time>　→</time> <span>車で箱根方面に移動</span></li>
+                <li><time>10:00</time> <span>箱根サウナ「山賊サウナ」到着</span></li>
+                <li><time>　→</time> <span>箱根の大自然を感じながらサ活</span></li>
+                <li><time>12:00</time> <span>車で仙石原方面に移動しながら昼食スポットを探す</span></li>
+                <li><time>　→</time> <span>昼食・移動</span></li>
+                <li><time>14:00</time> <span>NFT別荘「箱根仙石原ロッジ」到着</span></li>
+                <li><time>　→</time> <span>座学:NFT別荘の理想と現実</span></li>
+                <li><time>　→</time> <span>エアドロップ:物品配布</span></li>
+                <li><time>　→</time> <span>サ活：別荘付属のサウナ見学(男性浴室・女性浴室あり)</span></li>
+                <li><time>16:00</time> <span>車で東京方面へ。</span></li>
+                <li><time>　→</time> <span>19:00ごろには東京周辺に到着見込み</span></li>
             </ul>
         </section>
 
@@ -240,7 +280,8 @@
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
                 const navHeight = document.querySelector('nav').offsetHeight;
-                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
+                const headerHeight = document.querySelector('header').offsetHeight;
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - (navHeight + headerHeight);
 
                 window.scrollTo({
                     top: targetPosition,
